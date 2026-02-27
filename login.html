@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+
+<link rel="stylesheet" href="CSS/styles.css">
+
+    <style>
+        /* General CSS */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f2f2f2;
+            color: #333;
+        }
+        header {
+            background-color: #478;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: #fff;
+        }
+        section {
+            padding: 20px;
+            margin-bottom: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+        }
+        footer {
+            background-color: #478;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+        }
+        .login-form input[type="text"], .login-form input[type="password"] {
+            padding: 10px;
+            margin: 5px;
+            width: calc(100% - 10px);
+        }
+        .login-form input[type="submit"] {
+            padding: 10px 20px;
+            background-color: #333;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+        .login-form input[type="submit"]:hover {
+            background-color: #555;
+        }
+
+        /* Mobile-specific CSS */
+        @media only screen and (max-width: 768px) {
+            body {
+                font-size: 14px; /* Adjust font size for better readability */
+            }
+            header {
+                padding: 10px 0;
+            }
+            nav ul li {
+                display: block;
+                margin-bottom: 10px;
+            }
+            section {
+                padding: 15px;
+            }
+ /* Tablet-specific CSS */
+        @media only screen and (min-width: 768px) {
+            /* Add styling for tablets */
+            section {
+                padding: 30px;
+            }
+        }
+
+        /* Laptop-specific CSS */
+        @media only screen and (min-width: 1024px) {
+            /* Add styling for laptops */
+            section {
+                padding: 40px;
+            }
+        }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Login</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="find-a-room.php">Find a Room</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="more.html">More About Amorgos</a></li>
+                <li><a href="sign-up.php">Sign Up</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+        <div class="login-form">
+            <form action="Amorgos-Rooms.php" method="post">
+                <input type="text" name="username" placeholder="Username">
+                <input type="password" name="password" placeholder="Password">
+                <input type="submit" value="Login">
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Amorgos Hotels. All rights reserved.</p>
+    </footer>
+</body>
+</html>
